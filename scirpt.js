@@ -18,14 +18,13 @@ function calcular(){
         alert('Nao tente bugar meu código')
         daysEl.innerHTML = "00"
     }
-    if(date1, date2 = "00"){
-        alert('Selecione as datas')
-        daysEl.innerHTML = "00"
-    }
+    
+
 }
+
 function limpar(){
     daysEl.innerHTML = "00"
-    input1.value = ""
-    input2.value = ""
+    document.getElementById("dtinicial").value = ""
+    document.getElementById("dtfinal").value = ""
     
 }
