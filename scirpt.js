@@ -4,7 +4,13 @@ const input2 = document.getElementById("dtfinal").value;
 
 function calcular(){
     const input1 = document.getElementById("dtinicial").value;
-    const input2 = document.getElementById("dtfinal").value; 
+    const input2 = document.getElementById("dtfinal").value;
+
+    if(!input1 || !input2){
+        alert('Por favor, insira a data inicial e a data final.');
+        return;
+    }
+
     const date1 = new Date(input1);
     const date2 = new Date(input2);
 
@@ -18,9 +24,8 @@ function calcular(){
         alert('Nao tente bugar meu código')
         daysEl.innerHTML = "00"
     }
-    
-
 }
+
 
 function limpar(){
     daysEl.innerHTML = "00"
