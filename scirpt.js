@@ -22,8 +22,8 @@ function calcular(){
 
     if(date2 < date1){
         alert('Nao tente bugar meu código')
-        daysEl.innerHTML = "00"
-    }
+        limpar()
+        }
 }
 
 
